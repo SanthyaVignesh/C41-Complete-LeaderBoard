@@ -46,7 +46,7 @@ class Game{
         textSize(30);
         text("Game Start",120,100);
         Player.getPlayerInfo();
-        player.getCarsAtEnd();
+        Player.getCarsAtEnd();
 
         
         if(allPlayers!== undefined){
@@ -103,7 +103,7 @@ class Game{
         console.log(player.rank);
         
         if(carsAtEnd === 4){
-            background(groundImg);
+            background("pink");
 
             textSize(25);
             fill("black");
@@ -112,6 +112,8 @@ class Game{
             camera.position.y = displayHeight/2;
 
             var yPos = displayHeight/3+150;
+            textSize(35)
+            text( "LEADERBOARD", displayWidth/2- 50, displayHeight/3)
             
             for(var plr in allPlayers){
                    

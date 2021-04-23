@@ -29,7 +29,7 @@ class Player{
         });
     }
 
-    getCarsAtEnd(){
+    static getCarsAtEnd(){
         database.ref("carsAtEnd").on("value",function(data){
             carsAtEnd = data.val();
         })
